@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <!-- tailwind and daizy ui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
@@ -15,15 +16,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- fony=t awsame -->
+<script src="https://kit.fontawesome.com/082bb901cb.js" crossorigin="anonymous"></script>
+
+<!-- tailwind custome color -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+<!-- end -->
+
 <style>
   .font-manrope{
     font-family: 'Manrope', sans-serif;
   }
 </style>
   </head>
-  <body class="font-manrope">
-    <header>
 
+
+  <body class="font-manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">It's good <br>tea time at The <br>Tea House</h1>
+            <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="images/banner.png" class="max-w-sm" />
+            <!-- fating badge -->
+            <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>
+                  Trust Pilot Ratings
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
 
